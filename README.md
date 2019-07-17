@@ -1,24 +1,6 @@
-# Teste de envio e recebimento de mensagem usando RabbitMQ com NodeJS
+## Teste de envio e recebimento de mensagem usando RabbitMQ com NodeJS
 
-## Instalação do RabbitMQ on Debian Distro
-
-### Passo 1
-
-**Instalar o Erlang**
-
-```ssh
-    $ sudo apt install erlang
-```
-
-**Instalação do RabbitMQ**
-
-Dependências:
-
-Baixe o package no link abaixo:
-
-```
-https://packagecloud.io/rabbitmq/rabbitmq-server-dev
-```
+<img align="right" width="30px" height="auto" src="https://www.rabbitmq.com/img/RabbitMQ-logo.svg" alt="RabbitMQ">
 
 **Executando a aplicação**
 
