@@ -1,6 +1,6 @@
 ## Teste de envio e recebimento de mensagem usando RabbitMQ com NodeJS
 
-<img align="right" width="30px" height="auto" src="https://www.rabbitmq.com/img/RabbitMQ-logo.svg" alt="RabbitMQ">
+<img align="right" src="https://www.rabbitmq.com/img/RabbitMQ-logo.svg" alt="RabbitMQ">
 
 **Executando a aplicação**
 
