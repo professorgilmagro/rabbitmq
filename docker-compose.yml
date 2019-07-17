@@ -1,0 +1,27 @@
+version: '2'
+services:
+    rabbitmq-server:
+        image: 'rabbitmq:3-management'
+        hostname: 'rabbitmq-server'
+        environment:
+            RABBITMQ_ERLANG_COOKIE: 'SWQOKODSQALRPCLNMEQG'
+            RABBITMQ_DEFAULT_USER: 'guest'
+            RABBITMQ_DEFAULT_PASS: 'guest'
+            RABBITMQ_DEFAULT_VHOST: '/'
+        ports:
+            - '15672:15672'
+            - '8888:5672'
+        labels:
+            NAME: 'rabbitmq-server'
+    dev:
+        image: node10
+        container_name: node10rabbit
+        build: .
+        depends_on:
+            - rabbitmq-server
+        command: sh -c "yarn install && yarn dev"
+        ports:
+            - '3333:3333'
+        volumes:
+            - ./:/usr/app/
+        working_dir: /usr/app
